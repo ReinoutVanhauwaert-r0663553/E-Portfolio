@@ -529,20 +529,19 @@
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
             <div class="my-auto">
                 <h2 class="mb-5">ContactPagina</h2>
-                <form action="mailto:reinout_van@hotmail.com" method="post" enctype="text/plain">
-                    Name:
-                    <br>
-                    <input type="text" name="name">
-                    <br> E-mail:
-                    <br>
-                    <input type="text" name="mail">
-                    <br> Comment:
-                    <br>
-                    <input type="text" name="comment" size="50">
-                    <br>
-                    <br>
-                    <input type="submit" value="Send">
-                    <input type="reset" value="Reset">
+
+
+                <form method="post" action="Contact.php">
+                    <label>Name:</label>
+                    <input name="sender">
+
+                    <label>Email address:</label>
+                    <input name="senderEmail">
+
+                    <label>Message:</label>
+                    <textarea rows="5" cols="20" name="message"></textarea>
+
+                    <input type="submit" name="submit">
                 </form>
                 <!--          <ul class="fa-ul mb-0">-->
 
@@ -551,7 +550,10 @@
              Something I achieved</li>
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
-              Mobile Web Specialist - Google Certification</li>
+              Mobile Web Specialist - Google Certifica<form method="post" action="contact.php">
+    <textarea name="message"></textarea>
+    <input type="submit">
+</form>tion</li>
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
               1<sup>st</sup>
