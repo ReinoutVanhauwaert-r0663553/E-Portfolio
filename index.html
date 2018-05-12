@@ -531,17 +531,25 @@
                 <h2 class="mb-5">ContactPagina</h2>
 
 
-                <form method="post" action="Contact.php">
-                    <label>Name:</label>
-                    <input name="sender">
-
-                    <label>Email address:</label>
-                    <input name="senderEmail">
-
-                    <label>Message:</label>
-                    <textarea rows="5" cols="20" name="message"></textarea>
-
-                    <input type="submit" name="submit">
+                <form method="post" action="send_mail.php">
+                    <p>
+                        <label>First Name
+                            <input type="text" name="first_name" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label>Email
+                            <input type="email" name="email_address">
+                        </label>
+                    </p>
+                    <p>
+                        <label>Comments
+                            <textarea name="comments" maxlength="500"></textarea>
+                        </label>
+                    </p>
+                    <p>
+                        <button>Submit the form</button>
+                    </p>
                 </form>
                 <!--          <ul class="fa-ul mb-0">-->
 
